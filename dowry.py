@@ -153,7 +153,7 @@ elif st.session_state.step == 4:
             st.markdown(f"""
                 <div class="metric-card">
                     <h3 style='margin:0; color:#ff00ff; text-shadow: none;'>FINAL OUTPUT</h3>
-                    <h1 style='margin:0;'>₹ {prediction:,.2f}</h1>
+                    <h1 style='margin:0;'>₹ {prediction/10:,.2f}</h1>
                     <p style='color:#00e5ff; margin-top: 5px;'>[ LAKHS ]</p>
                 </div>
             """, unsafe_allow_html=True)
