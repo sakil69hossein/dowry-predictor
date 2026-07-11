@@ -115,7 +115,7 @@ elif st.session_state.step == 3:
     
     st.session_state.f_wealth = st.slider("Family Net Worth (Lakhs)", 0.0, 500.0, st.session_state.f_wealth, 1.0)
     st.write("<br>", unsafe_allow_html=True)
-    st.session_state.land = st.slider("Agricultural Land (Acres)", 0.0, 100.0, st.session_state.land, 0.5)
+    st.session_state.land = st.slider("Agricultural Land (Acres)", 0.0, 100.0, st.session_state.land, 0.1)
     st.write("<br>", unsafe_allow_html=True)
     st.session_state.locale = st.radio("Geographic Locale", ["Urban", "Rural"], horizontal=True, index=["Urban", "Rural"].index(st.session_state.locale))
     
