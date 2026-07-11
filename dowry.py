@@ -73,7 +73,7 @@ if st.session_state.step == 1:
     st.markdown("### STEP 1: GROOM PARAMETERS")
     st.markdown("<div class='metric-card'>", unsafe_allow_html=True)
     
-    st.session_state.g_age = st.slider("Groom Age ", 0.0, 100.0, st.session_state.g_inc, 0.5)
+    st.session_state.g_age = st.slider("Groom Age ", 18, 100, st.session_state.g_age, 1)
     st.write("<br>", unsafe_allow_html=True)
     st.session_state.g_inc = st.slider("Groom Income (LPA)", 0.0, 100.0, st.session_state.g_inc, 0.5)
     st.write("<br>", unsafe_allow_html=True)
@@ -93,7 +93,7 @@ elif st.session_state.step == 2:
     st.markdown("### STEP 2: BRIDE PARAMETERS")
     st.markdown("<div class='metric-card'>", unsafe_allow_html=True)
     
-    st.session_state.b_age = st.slider("Bride Age ", 0.0, 100.0, st.session_state.b_inc, 0.5)
+    st.session_state.b_age = st.slider("Bride Age ", 18, 100, st.session_state.b_age, 1)
     st.write("<br>", unsafe_allow_html=True)
     st.session_state.b_inc = st.slider("Bride Income (LPA)", 0.0, 100.0, st.session_state.b_inc, 0.5)
     st.write("<br>", unsafe_allow_html=True)
