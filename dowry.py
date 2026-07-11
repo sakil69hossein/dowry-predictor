@@ -38,7 +38,6 @@ st.markdown("""
         background-color: #ff00ff !important; color: #000000 !important;
         box-shadow: 0 0 25px #ff00ff, 0 0 50px #ff00ff !important;
     }
-    div.row-widget.stRadio > div { flex-direction: row; align-items: center; justify-content: center; gap: 20px;}
     </style>
 """, unsafe_allow_html=True)
 @st.cache_resource
