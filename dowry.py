@@ -158,9 +158,9 @@ elif st.session_state.step == 4:
                 </div>
             """, unsafe_allow_html=True)
             
-            max_gauge_value = max(100, prediction * 1.5) 
+            max_gauge_value = max(100, (prediction/10) * 1.5) 
             fig = go.Figure(go.Indicator(
-                mode = "gauge+number", value = prediction,
+                mode = "gauge+number", value = prediction/10,
                 number = {'prefix': "₹ ", 'suffix': " L", 'font': {'color': '#00e5ff'}},
                 domain = {'x': [0, 1], 'y': [0, 1]},
                 gauge = {
