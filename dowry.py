@@ -110,7 +110,7 @@ elif st.session_state.step == 2:
     with col1: st.button("⏪ BACK", on_click=prev_step, key="back2")
     with col2: st.button("NEXT ⏩", on_click=next_step, key="next2")
 elif st.session_state.step == 3:
-    st.markdown("### STEP 3: GROOM"S ASSETS & LOCALE")
+    st.markdown("### STEP 3: GROOM'S ASSETS & LOCALE")
     st.markdown("<div class='metric-card'>", unsafe_allow_html=True)
     
     st.session_state.f_wealth = st.slider("Family Net Worth (Lakhs)", 0.0, 500.0, st.session_state.f_wealth, 1.0)
